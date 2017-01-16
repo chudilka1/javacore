@@ -1,2 +1,0 @@
-# javacore
-studying projects
