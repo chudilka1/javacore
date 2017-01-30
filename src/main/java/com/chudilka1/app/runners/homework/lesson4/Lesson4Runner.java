@@ -9,7 +9,7 @@ public class Lesson4Runner {
     private static final String CLASS2 = "Type '2', to compare areas of two circles\n";
     private static final String CLASS3 = "Type '3', to compare two numbers\n";
     private static final String CLASS4 = "Type '4', to calculate whether the entered numbers is even or odd\n";
-    private static final String CLASS5 = "Type '5', to check if entered lenght of triangle sides result in right-angled triangle\n";
+    private static final String CLASS5 = "Type '5', to check if entered length of triangle sides result in right-angled triangle\n";
     private static final String MENU = "\nYOU MAY RUN FOLLOWING CALCULATIONS:\n" + CLASS1 + CLASS2 + CLASS3 + CLASS4 + CLASS5 + "\n";
 
     private static void listClasses() {
