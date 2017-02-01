@@ -1,6 +1,6 @@
-package com.chudilka1.app.runners.homework.lesson4;
+package com.chudilka1.runners.homework.lesson4;
 
-import com.chudilka1.app.runners.classwork.lesson4.*;
+import com.chudilka1.runners.classwork.lesson4.*;
 import java.util.Scanner;
 
 
