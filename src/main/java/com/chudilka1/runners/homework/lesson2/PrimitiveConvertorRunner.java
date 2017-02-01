@@ -1,4 +1,4 @@
-package com.chudilka1.app.runners.homework.lesson2;
+package com.chudilka1.runners.homework.lesson2;
 import com.chudilka1.app.homework.lesson2.convertors.PrimitiveConvertor;
 
 public class Lesson3Runner {
