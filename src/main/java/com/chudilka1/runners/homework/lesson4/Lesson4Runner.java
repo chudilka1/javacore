@@ -24,40 +24,37 @@ public class Lesson4Runner {
             + "Type a number to execute calculations and press 'ENTER': ");
             scanner.nextLine();
         }
-        while (scanner.hasNextDouble()) {
+        boolean flag;
+        do {
             int input = (int) scanner.nextDouble();
-            if (input == 1) {
-                System.out.println("--CALCULATION OF CIRCLE AREA--");
-                CircleAreaRunner.main(null);
-                break;
-            } else if (input == 2) {
-                System.out.println("--TWO CIRCLES COMPARISON--");
-                CompareCircleAreasRunner.main(null);
-                break;
-            } else if (input == 3) {
-                System.out.println("--TWO NUMBERS COMPARISON--");
-                CompareTwoNumbersRunner.main(null);
-                break;
-            } else if (input == 4) {
-                System.out.println("--EVEN OR ODD--");
-                EvenOrOddRunner.main(null);
-                break;
-            } else if (input == 5) {
-                System.out.println("--IS IT RIGHT-ANGLED TRIANGLE?--");
-                RightAngledTriangleRunner.main(null);
-                break;
-            } else {
-                System.out.println("(!) This number is not identified with one of the tasks mentioned above\n");
-                Lesson4Runner.listClasses();
-                System.out.print("Type appropriate number to execute calculations and press 'ENTER': ");
-            }
-            scanner.nextLine();
-            if (!scanner.hasNextDouble()) {
-                System.out.print("(!) Value entered is not a number!\n");
-                Lesson4Runner.launchClass();
-                break;
-            }
-        }
+            switch (input) {
+                case 1: System.out.println("--CALCULATION OF CIRCLE AREA--");
+                    CircleAreaRunner.main(null);
+                    flag = false;
+                    break;
+                case 2: System.out.println("--TWO CIRCLES COMPARISON--");
+                    CompareCircleAreasRunner.main(null);
+                    flag = false;
+                    break;
+                case 3: System.out.println("--TWO NUMBERS COMPARISON--");
+                    CompareTwoNumbersRunner.main(null);
+                    flag = false;
+                    break;
+                case 4: System.out.println("--EVEN OR ODD--");
+                    EvenOrOddRunner.main(null);
+                    flag = false;
+                    break;
+                case 5: System.out.println("--IS IT RIGHT-ANGLED TRIANGLE?--");
+                    RightAngledTriangleRunner.main(null);
+                    flag = false;
+                    break;
+                default: System.out.println("(!) This number is not identified with one of the tasks mentioned above\n");
+                    Lesson4Runner.listClasses();
+                    System.out.print("Type appropriate number to execute calculations and press 'ENTER': ");
+                    flag = true;
+                    break; } // end of switch
+        } while (flag);
+
         System.out.print("\nEnter 'Y' to launch any calculations again or 'N' to quit: ");
         while (true) {
             String decision;
