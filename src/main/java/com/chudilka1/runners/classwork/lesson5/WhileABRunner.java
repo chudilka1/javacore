@@ -10,7 +10,7 @@ public class WhileABRunner {
         Scanner scanner = new Scanner(System.in);
         WhileAB whileAB = new WhileAB();
 
-/*        //list a until it is <= b
+        //list a until it is <= b
         System.out.print("Enter 1st number: ");
         double a = scanner.nextDouble();
         System.out.print("Enter 2st number: ");
@@ -60,7 +60,6 @@ public class WhileABRunner {
         for(int i=0; i < longArray.length; i++){
             System.out.println(longArray[i]);
         }
-        */
 
         //list values in multi-dimensional array
         int[][] multiArray = {
