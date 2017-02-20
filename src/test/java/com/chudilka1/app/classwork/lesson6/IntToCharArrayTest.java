@@ -1,8 +1,15 @@
-import static org.junit.Assert.*;
+package com.chudilka1.app.classwork.lesson6;
 
-/**
- * Created by User on 19.02.2017.
- */
+import org.junit.Assert;
+import org.junit.Test;
+
 public class IntToCharArrayTest {
+
+    @Test
+    public void arrayOfChars() {
+        IntToCharArray intToCharArray = new IntToCharArray();
+        char[] expected = {'d', 'e', 'f', 'g', 'h'};
+        Assert.assertArrayEquals(intToCharArray.arrayOfChars(105, 100), expected);
+    }
 
 }

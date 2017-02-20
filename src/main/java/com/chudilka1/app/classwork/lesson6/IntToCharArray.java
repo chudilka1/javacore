@@ -1,19 +1,12 @@
 package com.chudilka1.app.classwork.lesson6;
 
-
-import java.util.Arrays;
-
 public class IntToCharArray {
-    public char[] arrayOfChars () {
-        char[] intarray = new char[256];
+    public char[] arrayOfChars (int a, int b) {
+        int arrayLength = a - b;
+        char[] intarray = new char[arrayLength];
         for (int i = 0; i < intarray.length; i++) {
-            intarray[i] = (char) i;
+            intarray[i] = (char) b++;
         }
         return intarray;
-    }
-
-    public static void main(String[] args) {
-        IntToCharArray intToCharArray = new IntToCharArray();
-        System.out.println("ASCII chars: " + Arrays.toString(intToCharArray.arrayOfChars()));
     }
 }

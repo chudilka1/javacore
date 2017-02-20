@@ -1,12 +1,11 @@
 package com.chudilka1.app.homework.lesson6;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 
 public class BubbleSorter2 {
-    /*public int[] bubbleSorterToBigger (int[] array1) {
-        boolean flag = true;
+    public int[] bubbleSorterToBigger (int[] array1) {
+        boolean flag;
         if (array1.length > 1) {
             do {
                 flag = false;
@@ -88,39 +87,36 @@ public class BubbleSorter2 {
         }//end outer for
         return biggest;
     }//end method
-    */
 
     //генератор неповторяющихся примеров из таблицы умножения
     public String[] taskGenerator(int a) {
         Random random = new Random();
         String[] array5 = new String[a];
+        int taskNumber = 0;
         for (int i = 0; i < array5.length; i++) {
             int x = random.nextInt(9) + 2;
             int y = random.nextInt(9) + 2;
-            String string = "" + x + "*" + y;
+            String string = Integer.toString(x) + "*" + Integer.toString(y);
             array5[i] = string;
-            if (i <= array5.length && i > 0) {
-                if (array5[i].equals(array5[i - 1])) {
-                    i--;
-                }
-            }
+            taskNumber += 1;
+            System.out.println(Integer.toString(taskNumber) + ". " + array5[i]);
         }
         return array5;
     }
 
     public static void main(String[] args) {
-        /*int[] array1 = new int[10];
+        int[] array1 = new int[10];
         //using methods in the class
         BubbleSorter2 sorting = new BubbleSorter2();
         for (int i = 0; i < array1.length; i++) {
             array1[i] = (int) (Math.random()*999);
         }
         System.out.println("BUBBLE SORTING\n" +
-                "Generated array" + Arrays.toString(array1));
+                "Generated array: " + Arrays.toString(array1).replace("[", "").replace("]", ""));
         sorting.bubbleSorterToBigger(array1);
-        System.out.println("Sorting from lesser to bigger" + Arrays.toString(array1));
+        System.out.println("Sorting from lesser to bigger " + Arrays.toString(array1));
         sorting.bubbleSorterToLesser(array1);
-        System.out.println("Sorting from bigger to lesser" + Arrays.toString(array1) + "\n");
+        System.out.println("Sorting from bigger to lesser " + Arrays.toString(array1) + "\n");
 
         //using Arrays.sort
         int[] array2 = new int[10];
@@ -141,7 +137,7 @@ public class BubbleSorter2 {
         System.out.println("SELECTION SORTER\n" +
                 "Generated array " + Arrays.toString(array3));
         sorting2.selectionSorter(array3);
-        System.out.println("Sorted array " + Arrays.toString(array3));
+        System.out.println("Sorted array " + Arrays.toString(array3) + "\n");
 
         //двухмерный массив с поиском наибольшего числа
         BubbleSorter2 sorting3 = new BubbleSorter2();
@@ -156,10 +152,11 @@ public class BubbleSorter2 {
             }
             System.out.println();
         }
-        System.out.println("Biggest in array " + sorting3.biggestInArray(array4) + "\n");*/
+        System.out.println("Biggest in array " + sorting3.biggestInArray(array4) + "\n");
 
         //массив различных примеров
         BubbleSorter2 bubbleSorter2 = new BubbleSorter2();
-        System.out.println(Arrays.toString(bubbleSorter2.taskGenerator(15)));
+        System.out.println("MULTIPLYING TASKS GENERATOR");
+        bubbleSorter2.taskGenerator(15);
     }
 }

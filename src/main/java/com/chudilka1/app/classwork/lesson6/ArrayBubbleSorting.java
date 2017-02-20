@@ -1,7 +1,5 @@
 package com.chudilka1.app.classwork.lesson6;
 
-import java.util.Arrays;
-
 public class ArrayBubbleSorting {
     public int[] bubbleSorter(int[] array) {
         boolean flag;
@@ -20,11 +18,6 @@ public class ArrayBubbleSorting {
             while (flag);
         }
         return array;
-    }
-    public static void main(String[] args) {
-        ArrayBubbleSorting arrayBubbleSorting = new ArrayBubbleSorting();
-        int [] array = {2,1,4,3};
-        System.out.println(Arrays.toString(arrayBubbleSorting.bubbleSorter(array)));
     }
 }
 
