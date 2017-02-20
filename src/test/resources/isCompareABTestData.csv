@@ -1,0 +1,8 @@
+parameterA,parameterB,expected
+7,7,"Result: ",1
+8,7,"Result: ",0
+6,7,"Result: ",1
+10.02,10.01,"Result: ",0
+0.01,0.01,"Result: ",1
+-1,0,"Result: ",0
+-3,-2.9,"Result: ",0

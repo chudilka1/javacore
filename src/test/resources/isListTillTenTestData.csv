@@ -1,0 +1,7 @@
+parameterA,message,expected
+11,Negative: should be 0 -->,0
+10.01,Negative: should be 0 -->,0
+10,Positive: should be 1 -->,1
+9.99,Positive: should be 1 -->,1
+9,Positive: should be 1 -->,1
+-1,Positive: should be 1 -->,1

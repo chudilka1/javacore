@@ -27,19 +27,17 @@ public class WhileAB {
                 result[1] = true;
             }
         }
-        result[2] = true;
         return result;
     }
 
 
     //Count how many even (i%2==0) numbers in range from 0 to 20
     public static int countEvens(int number2) {
-        int i = number2;
         int k = 0;
-        for (i = number2; i <= 20; i+=2) {
+        for (int i = number2; i <= 20; i+=2) {
             k++;
         }
         System.out.println("In range from entered number to 20 - " + k + " even numbers");
-        return number2;
+        return k;
     }
 }
