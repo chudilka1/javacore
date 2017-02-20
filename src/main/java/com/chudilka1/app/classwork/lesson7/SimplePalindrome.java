@@ -15,6 +15,6 @@ public class SimplePalindrome {
 
     public static void main(String[] args) {
         SimplePalindrome p = new SimplePalindrome();
-        p.palindrome("moMmom");
+        p.palindrome("moom");
     }
 }
