@@ -89,6 +89,6 @@ public class ArrayFromFileReader {
         reader.arraySorter();
 
         //4
-        reader.arrayIntoFileWriter("/home/alexandr/Desktop/output.txt", reader.arrayOfDoubles);
+        arrayIntoFileWriter("/home/alexandr/Desktop/output.txt", reader.arrayOfDoubles);
     }
 }

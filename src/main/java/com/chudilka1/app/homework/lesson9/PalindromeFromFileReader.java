@@ -63,6 +63,6 @@ public class PalindromeFromFileReader {
         palindrome.palindromeChecker();
 
         //3.
-        palindrome.arrayIntoFileWriter("/home/alexandr/Desktop/output1.txt", palindrome.resultsArray);
+        arrayIntoFileWriter("/home/alexandr/Desktop/output1.txt", palindrome.resultsArray);
     }
 }
