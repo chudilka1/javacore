@@ -23,7 +23,7 @@ public class WhiteCollar extends Human {
         }
     }
 
-    static public void main (String[] args) {
+    public static void main (String[] args) {
         //get age, name, companyName
         WhiteCollar whiteCollar = new WhiteCollar(31, "Alex", "Uvo");
         Scanner scanner = new Scanner(System.in).useDelimiter("\\n");
